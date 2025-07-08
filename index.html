@@ -104,29 +104,35 @@
     <p>© 2025 Abel Aguilera. Built with HTML & CSS.</p>
   </footer>
 
-  <!-- Scripts -->
+  <!-- JavaScript Fixes -->
   <script>
-    const toggle = document.getElementById('darkModeToggle');
-    toggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-    });
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.getElementById('darkModeToggle');
+      const navToggle = document.getElementById('navToggle');
+      const navLinks = document.getElementById('navLinks');
 
-    const navToggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
-    navToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('show-nav');
-    });
+      if (toggle) {
+        toggle.addEventListener('click', () => {
+          document.body.classList.toggle('dark-mode');
+        });
+      }
 
-    // ✅ Close menu after clicking a link on mobile
-    document.querySelectorAll('#navLinks a').forEach(link => {
-      link.addEventListener('click', () => {
-        if (window.innerWidth <= 768) {
-          navLinks.classList.remove('show-nav');
-        }
-      });
+      if (navToggle && navLinks) {
+        navToggle.addEventListener('click', () => {
+          navLinks.classList.toggle('show-nav');
+        });
+
+        // Collapse menu after clicking a nav link on mobile
+        document.querySelectorAll('#navLinks a').forEach(link => {
+          link.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+              navLinks.classList.remove('show-nav');
+            }
+          });
+        });
+      }
     });
   </script>
-
 </body>
 
 </html>
