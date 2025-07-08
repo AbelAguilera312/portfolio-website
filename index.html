@@ -12,21 +12,25 @@
 <body>
   <!-- Navbar -->
   <nav id="navbar">
-    <ul>
-      <li><a href="#welcome-section">Welcome</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#testimonials">Testimonials</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><button id="darkModeToggle">🌙</button></li>
-    </ul>
+    <div class="nav-container">
+      <span class="nav-logo">Abel</span>
+      <button class="nav-toggle" id="navToggle">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#welcome-section">Welcome</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="darkModeToggle">🌙</button></li>
+      </ul>
+    </div>
   </nav>
 
   <!-- Welcome Section -->
   <section id="welcome-section">
     <div class="hero-content">
-      <h1>Hi, I'm Abel</h1>
+      <h1>Hi, I'm Abel Aguilera</h1>
       <p>A Computer Science graduate passionate about building efficient, user-focused solutions.</p>
       <a href="#projects" class="cta-button">See My Work</a>
     </div>
@@ -54,10 +58,9 @@
     <h2>About Me</h2>
     <p>
       I'm a recent Computer Science graduate from Florida International University (GPA: 3.32). I’ve built
-      ServiceNow-based apps
-      including a Leave Management System and a VIN Lookup platform using Integration Hub, Flow Designer, and custom
-      scripting.
-      I thrive on solving real-world problems through clean, scalable code and user-friendly design.
+      ServiceNow-based apps including a Leave Management System and a VIN Lookup platform using Integration Hub,
+      Flow Designer, and custom scripting. I thrive on solving real-world problems through clean, scalable code
+      and user-friendly design.
     </p>
 
     <h3>Skills & Technologies</h3>
@@ -78,9 +81,22 @@
       Aug 2021 – Dec 2024 · GPA: 3.32
     </p>
     <a class="resume-button" href="abel_resume.pdf" download>Download My Resume (PDF)</a>
-
   </section>
 
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial">
+      <p>"Abel consistently delivers clean, scalable code and brings great problem-solving energy to our team."
+        <br><strong>– Former Team Lead, Sockify</strong>
+      </p>
+    </div>
+    <div class="testimonial">
+      <p>"His ServiceNow implementation transformed our leave management process. Highly recommended!"
+        <br><strong>– Project Advisor</strong>
+      </p>
+    </div>
+  </section>
 
   <!-- Certifications Section -->
   <section id="certifications">
@@ -106,15 +122,25 @@
     <p>LinkedIn: <a href="https://www.linkedin.com/in/abelaguilera6277988/" target="_blank">abelaguilera6277988</a></p>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 Abel Aguilera. Built with HTML & CSS.</p>
   </footer>
 
-  <!-- Dark Mode Script -->
+  <!-- Scripts -->
   <script>
-    const toggle = document.getElementById('darkModeToggle');
-    toggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
+    window.addEventListener("DOMContentLoaded", () => {
+      const toggle = document.getElementById('darkModeToggle');
+      const navToggle = document.getElementById('navToggle');
+      const navLinks = document.getElementById('navLinks');
+
+      toggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+      });
+
+      navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show-nav');
+      });
     });
   </script>
 </body>
