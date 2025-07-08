@@ -207,10 +207,13 @@ footer {
 .dark-mode .resume-button {
   background-color: #66a6ff;
   color: #000;
+  /* Change this to darker */
+  font-weight: bold;
 }
 
 .dark-mode .resume-button:hover {
   background-color: #4a90e2;
+  color: white;
 }
 
 .nav-container {
