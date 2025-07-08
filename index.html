@@ -16,8 +16,10 @@
       <li><a href="#welcome-section">Welcome</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
       <li><a href="#certifications">Certifications</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><button id="darkModeToggle">🌙</button></li>
     </ul>
   </nav>
 
@@ -75,6 +77,22 @@
       Bachelor's Degree in Computer Science — Florida International University<br>
       Aug 2021 – Dec 2024 · GPA: 3.7
     </p>
+    <a class="cta-button" href="abel_resume.pdf" download>📄 Download My Resume</a>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial">
+      <p>"Abel consistently delivers clean, scalable code and brings great problem-solving energy to our team."
+        <br><strong>– Former Team Lead, Sockify</strong>
+      </p>
+    </div>
+    <div class="testimonial">
+      <p>"His ServiceNow implementation transformed our leave management process. Highly recommended!"
+        <br><strong>– Project Advisor</strong>
+      </p>
+    </div>
   </section>
 
   <!-- Certifications Section -->
@@ -104,6 +122,14 @@
   <footer>
     <p>© 2025 Abel Aguilera. Built with HTML & CSS.</p>
   </footer>
+
+  <!-- Dark Mode Script -->
+  <script>
+    const toggle = document.getElementById('darkModeToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
 </body>
 
 </html>
