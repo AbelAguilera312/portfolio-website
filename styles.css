@@ -150,20 +150,7 @@ footer {
   font-size: 0.9rem;
 }
 
-#testimonials {
-  background-color: #f0f0f0;
-  color: #111;
-}
 
-
-.testimonial {
-  max-width: 600px;
-  margin: 1.5rem auto;
-  font-style: italic;
-  color: #444;
-  border-left: 4px solid #66a6ff;
-  padding-left: 1rem;
-}
 
 /* 🌙 Dark Mode Styles */
 .dark-mode {
@@ -222,13 +209,4 @@ footer {
 
 .dark-mode .resume-button:hover {
   background-color: #4a90e2;
-}
-
-.dark-mode #testimonials {
-  background-color: #1a1a1a;
-  color: #eee;
-}
-
-.dark-mode .testimonial {
-  border-left: 4px solid #66a6ff;
 }
