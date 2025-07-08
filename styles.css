@@ -53,7 +53,9 @@ body {
   margin-bottom: 1rem;
 }
 
-#projects, #certifications, #contact {
+#projects,
+#certifications,
+#contact {
   padding: 4rem 2rem;
   text-align: center;
 }
@@ -97,5 +99,38 @@ body {
 
   #welcome-section h1 {
     font-size: 2rem;
+  }
+}
+
+
+.hero-content {
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+.cta-button {
+  margin-top: 1rem;
+  display: inline-block;
+  background-color: #0d1117;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #333;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

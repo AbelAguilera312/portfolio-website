@@ -6,9 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+  <footer>
+    <p>© 2025 Laura Gutierrez. Built with HTML & CSS.</p>
+  </footer>
+
   <!-- Navbar -->
   <nav id="navbar">
     <ul>
@@ -21,9 +27,13 @@
 
   <!-- Welcome Section -->
   <section id="welcome-section">
-    <h1>Hello, I'm Abel Aguilera</h1>
-    <p>Welcome to my portfolio website!</p>
+    <div class="hero-content">
+      <h1>Hi, I'm Abel</h1>
+      <p>Web developer in progress. Check out what I’m building.</p>
+      <a href="#projects" class="cta-button">See My Work</a>
+    </div>
   </section>
+
 
   <!-- Projects Section -->
   <section id="projects">
@@ -38,6 +48,10 @@
       </p>
     </div>
   </section>
+
+  <div class="project-tile coming-soon">
+    <p>🚧 New project coming soon…</p>
+  </div>
 
   <!-- Certifications Section -->
   <section id="certifications">
@@ -62,3 +76,22 @@
 </body>
 
 </html>
+
+
+
+<!-- 🔥 Bonus Ideas (Once Ready)
+Add smooth scroll:
+
+css
+Copy
+Edit
+html {
+  scroll-behavior: smooth;
+}
+Add a dark mode toggle 🌙
+
+Add icons (Font Awesome) to links
+
+Add a contact form with Netlify or Formspree integration
+
+Use sections like "About Me" or "Skills" (even with just a few items) -->
